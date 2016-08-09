@@ -1,10 +1,8 @@
 syntax="proto3";
 
-import "google/protobuf/any.proto";
 import "motion.proto";
 import "gps.proto";
 import "video.proto";
-import "ai.proto";
 
 package rocproto;
 
@@ -14,7 +12,7 @@ message Packet {
     uint32  header  = 2;
     uint32  ID      = 3;
 
-    Mv      mv      = 4
+    Mv      mv      = 4;
     Cam     cam     = 5;
     Coord   coord   = 6;
 
@@ -50,7 +48,7 @@ message Packet {
 }
 
 message Error {
-  
+
   uint32  code  = 1;
   string  msg   = 2;
 }
