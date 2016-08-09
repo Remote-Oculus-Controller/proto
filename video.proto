@@ -1,5 +1,9 @@
 syntax="proto3";
 
+// https://docs.google.com/spreadsheets/d/1Oy4ajVCVjq2NHR3dN3VcLXvMPwSczzRvMgC31JjsDRA/edit?usp=sharing
+
+// Allocated tag 0x30
+
 package rocproto;
 
 message Processing {

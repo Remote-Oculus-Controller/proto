@@ -1,5 +1,7 @@
 syntax="proto3";
 
+// https://docs.google.com/spreadsheets/d/1Oy4ajVCVjq2NHR3dN3VcLXvMPwSczzRvMgC31JjsDRA/edit?usp=sharing
+
 import "motion.proto";
 import "gps.proto";
 import "video.proto";

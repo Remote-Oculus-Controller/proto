@@ -1,13 +1,36 @@
 syntax = "proto3";
 
+// https://docs.google.com/spreadsheets/d/1Oy4ajVCVjq2NHR3dN3VcLXvMPwSczzRvMgC31JjsDRA/edit?usp=sharing
+
+// Allocated tag 0xA0
+
 package rocproto;
 
 message Cam {
     double x = 1;
     double y = 2;
+
+    enum Codes {
+        option allow_alias=true;
+        nil = 0;
+
+        // CMD
+        mv = 0xA0;
+        reset = 0xA1;
+        getAngle = 0xA2;
+
+        // DATA
+        angle = 0xA0;
+    }
 }
 
 message Mv {
     double speed = 1;
     double angle = 2;
+
+    enum Codes {
+        nil = 0;
+        stop = 0xAF;
+        move = 0xA4;
+    }
 }

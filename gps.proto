@@ -1,9 +1,19 @@
 syntax="proto3";
 
+// https://docs.google.com/spreadsheets/d/1Oy4ajVCVjq2NHR3dN3VcLXvMPwSczzRvMgC31JjsDRA/edit?usp=sharing
+
+// Allowcated tag 0x10
+
 package rocproto;
 
 message Coord {
     double lat = 1;
     double long = 2;
     double ori = 3;
+
+    enum Codes {
+        nil = 0;
+        getCoord = 0x11;
+        toogle = 0x12;
+    }
 }

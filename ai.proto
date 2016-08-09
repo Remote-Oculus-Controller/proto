@@ -1,8 +1,11 @@
 syntax = "proto3";
 
+// https://docs.google.com/spreadsheets/d/1Oy4ajVCVjq2NHR3dN3VcLXvMPwSczzRvMgC31JjsDRA/edit?usp=sharing
+
+// Allowcated tag 0x20
 package rocproto;
 
-message AiInfo {
+message AiCodes {
 
     enum Codes {
         Empty = 0;
