@@ -1,0 +1,9 @@
+syntax="proto3";
+
+package rocproto;
+
+message Coord {
+    double lat = 1;
+    double long = 2;
+    double ori = 3;
+}
