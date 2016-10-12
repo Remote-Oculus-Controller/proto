@@ -15,6 +15,6 @@ message AiCodes {
         OBSTACLE = 0x23;
         N_OBSTACLE = 0x24;
         LIGHT = 0x25;
-        DLIGH = 0x26;
+        DLIGHT = 0x26;
     }
 }

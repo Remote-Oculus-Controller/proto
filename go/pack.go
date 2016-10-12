@@ -4,7 +4,7 @@ import . "github.com/Remote-Oculus-Controller/proto"
 
 const (
 	MAGIC      = uint32(Packet_MAGIC_Number)
-	SHIFT      = uint32(Packet_SHIFT)
+	SHIFT      = uint32(Packet_SHIFT_TYPE)
 	SHIFT_SEND = uint32(Packet_SHIFT_SEND)
 	MASK_SEND  = uint32(Packet_MASK_SEND)
 	MASK_DEST  = uint32(Packet_MASK_DEST)

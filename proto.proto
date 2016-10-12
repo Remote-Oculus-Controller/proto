@@ -5,6 +5,7 @@ syntax="proto3";
 import "motion.proto";
 import "gps.proto";
 import "video.proto";
+import "error.proto";
 
 package rocproto;
 
@@ -35,7 +36,7 @@ message Packet {
         DATA = 2;
         ERROR = 3;
         MASK_TYPE = 3; //11
-        SHIFT = 6;
+        SHIFT_TYPE = 6;
     }
 
     enum Section {
@@ -49,8 +50,4 @@ message Packet {
     }
 }
 
-message Error {
 
-  uint32  code  = 1;
-  string  msg   = 2;
-}
