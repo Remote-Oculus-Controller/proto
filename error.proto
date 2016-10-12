@@ -1,0 +1,18 @@
+syntax="proto3";
+
+// https://docs.google.com/spreadsheets/d/1Oy4ajVCVjq2NHR3dN3VcLXvMPwSczzRvMgC31JjsDRA/edit?usp=sharing
+
+package rocproto;
+
+message Error {
+
+    uint32  code  = 1;
+    string  msg   = 2;
+
+    enum Codes {
+        nil = 0;
+        Network = 0xE0;
+        Packet = 0xE1;
+        CMDEX = 0xE2;
+    }
+}
